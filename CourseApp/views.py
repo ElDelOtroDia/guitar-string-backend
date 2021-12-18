@@ -13,3 +13,8 @@ class CourseViewSet(viewsets.ModelViewSet):
 class ExerciseViewSet(viewsets.ModelViewSet):
     queryset = ExerciseModel.objects.all()
     serializer_class = ExerciseSerializer
+
+
+class DifficultyViewSet(viewsets.ModelViewSet):
+    queryset = DifficultyModel.objects.all()
+    serializer_class = DifficultySerializer
